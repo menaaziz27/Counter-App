@@ -3,6 +3,7 @@
     <AppTitle msg="Silly App"/>
     <CounterResult :counter="counter" />
     <IncreaseButton @IncreaseOne="plusOne"/>
+    <DecreaseButton @decreaseOne="minusOne" />
   </div>
 </template>
 
@@ -10,13 +11,15 @@
 import AppTitle from './components/AppTitle.vue'
 import CounterResult from './components/CounterResult';
 import IncreaseButton from './components/IncreaseButton';
+import DecreaseButton from './components/DecreaseButton';
 
 export default {
   name: 'App',
   components: {
     AppTitle,
     CounterResult,
-    IncreaseButton
+    IncreaseButton,
+    DecreaseButton
   },
   data: function() {
     return {
@@ -26,6 +29,10 @@ export default {
   methods: {
     plusOne() {
       this.counter += 1;
+    },
+
+    minusOne() {
+      this.counter -= 1;
     }
   }
 }
