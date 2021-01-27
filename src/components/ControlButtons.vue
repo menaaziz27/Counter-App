@@ -1,7 +1,7 @@
 <template>
     <div>
-        <button @click="plusOne">Increase!</button>
         <button @click="minusOne">Decrease!</button>
+        <button @click="plusOne">Increase!</button>
     </div>
 </template>
 <script>
