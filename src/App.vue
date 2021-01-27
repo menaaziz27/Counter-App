@@ -2,24 +2,21 @@
   <div id="app">
     <AppTitle msg="Silly App"/>
     <CounterResult :counter="counter" />
-    <IncreaseButton @IncreaseOne="plusOne"/>
-    <DecreaseButton @decreaseOne="minusOne" />
+    <ControlButtons @increaseOne="plusOne" @decreaseOne="minusOne"/>
   </div>
 </template>
 
 <script>
 import AppTitle from './components/AppTitle.vue'
 import CounterResult from './components/CounterResult';
-import IncreaseButton from './components/IncreaseButton';
-import DecreaseButton from './components/DecreaseButton';
+import ControlButtons from './components/ControlButtons';
 
 export default {
   name: 'App',
   components: {
     AppTitle,
     CounterResult,
-    IncreaseButton,
-    DecreaseButton
+    ControlButtons,
   },
   data: function() {
     return {
