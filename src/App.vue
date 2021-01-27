@@ -1,17 +1,32 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <AppTitle msg="Silly App"/>
+    <CounterResult :counter="counter" />
+    <IncreaseButton @IncreaseOne="plusOne"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AppTitle from './components/AppTitle.vue'
+import CounterResult from './components/CounterResult';
+import IncreaseButton from './components/IncreaseButton';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    AppTitle,
+    CounterResult,
+    IncreaseButton
+  },
+  data: function() {
+    return {
+      counter: 0
+    }
+  },
+  methods: {
+    plusOne() {
+      this.counter += 1;
+    }
   }
 }
 </script>
