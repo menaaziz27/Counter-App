@@ -10,7 +10,7 @@ It's a vue application in its simplest forms, just wanted to get my hands dirty 
 
 ### live preview of the app
 
-[https://app.netlify.com/sites/infallible-boyd-88d212/overview](https://app.netlify.com/sites/infallible-boyd-88d212/overview)
+[https://infallible-boyd-88d212.netlify.app/](https://infallible-boyd-88d212.netlify.app/)
 
 ## Project setup
 
