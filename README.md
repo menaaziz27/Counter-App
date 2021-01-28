@@ -8,6 +8,10 @@ It's a vue application in its simplest forms, just wanted to get my hands dirty 
   <img src="./src/assets/counter-app.png" >
 </p>
 
+### live preview of the app
+
+[https://app.netlify.com/sites/infallible-boyd-88d212/overview](https://app.netlify.com/sites/infallible-boyd-88d212/overview)
+
 ## Project setup
 
 ```
